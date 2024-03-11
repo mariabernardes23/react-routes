@@ -4,7 +4,7 @@ import './style.css'
 export function Header () {
     return(
         <div className='header'>
-            <h1>LOGO</h1>
+            <Link to="/" className='links'><h1>LOGO</h1></Link>
 
             <div>
                 <Link to='/produto/20' className='links'>Produto</Link>

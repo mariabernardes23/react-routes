@@ -1,8 +1,14 @@
+import "./style.css"
+
 export function Footer() {
     return(
         <>
-            <p>Todos os direitos reservados</p>
-            <span>Redes socias</span>
+            <footer className="footer">
+                <section className="information">
+                    <p>Todos os direitos reservados</p>
+                    <span>Redes socias</span>
+                </section> 
+            </footer>
         </>
     )
 }

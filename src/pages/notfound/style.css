@@ -1,0 +1,36 @@
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.erro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 40rem;
+    margin: 2rem;
+}
+
+.button-home {
+    background-color: #FFFFFF;
+    border: 0.3rem solid #3B3BA4;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.button-home:hover {
+    background-color: #98B1E1;
+}
+
+
+.link {
+    text-decoration: none;
+    color: #3B3BA4;
+}
