@@ -8,3 +8,11 @@
     color: #FFFFFF;
     padding: 1rem;
 }
+
+.social-network {
+    margin: 0.5rem;
+}
+
+.social-network:hover {
+    color: red;
+}

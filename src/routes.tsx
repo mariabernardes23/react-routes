@@ -5,6 +5,7 @@ import { Sobre } from "./pages/sobre"
 import { NotFound } from "./pages/notfound";
 import { Produto } from "./pages/produto"
 import { Layout } from "./components/layout";
+import { Login } from "./pages/login";
 
 const router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
             {
                 path: '/produto/:id',
                 element: <Produto />
+            },
+            {
+                path: '/login',
+                element: <Login />
             },
             {
                 path: '*',
