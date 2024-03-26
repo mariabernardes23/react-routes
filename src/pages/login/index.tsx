@@ -3,6 +3,7 @@ import { Input } from "../../components/input";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../services/firebaseConnection";
 import { useNavigate } from "react-router-dom";
+import './style.css';
 
 export function Login() {
     const [email, setEmail] = useState('')
@@ -29,13 +30,14 @@ export function Login() {
     }
 
     return(
-        <div>
-            <form onSubmit={handleSubmit}>
-                <Input
+        <div className="container-form">
+            <form onSubmit={handleSubmit} className="form">
+                <Input 
                     placeholder="joao@silva.com"
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)} 
+                    className="input"
                 />
 
                 <Input
@@ -43,9 +45,10 @@ export function Login() {
                     type="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
+                    className="input"
                 />
 
-                <button type="submit">Entrar</button>
+                <button type="submit" className="button">Entrar</button>
 
             </form>
         </div>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './style.css'
+import Card from '../../components/card/card';
 interface FoodProps{
     food: {
         label: string;
@@ -29,17 +30,17 @@ export function Produto() {
         <div>
             <h1 className='title'>Página de Produtos</h1>
             <hr />
-            
             <div className='card-list'>
                 {
                     foods.map((item, index) => (
-                        <div className='container'>
-                            <div key={index}>
-                                <img src={item.food.image} alt={item.food.label} />
-                                <p>{item.food.label}</p>
-                                <p>{item.food.category}</p>
-                            </div>
-                        </div>
+                        // <div className='container'>
+                        //     <div key={index}>
+                        //         <img src={item.food.image} alt={item.food.label} />
+                        //         <p>{item.food.label}</p>
+                        //         <p>{item.food.category}</p>
+                        //     </div>
+                        // </div>
+                        <Card key={index} imageUrl={item.food.image} title={item.food.label} text={item.food.label} buttonText={'Ver Mais'} buttonUrl={''}/>
                     ))
                 }
             </div>

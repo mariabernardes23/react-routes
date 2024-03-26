@@ -37,5 +37,4 @@ const CardButton = styled.button`
         background-color: #89BBE4;
     }
 `
-
 export {CardContainer, CardImg, CardBody, CardTitle, CardText, CardButton}

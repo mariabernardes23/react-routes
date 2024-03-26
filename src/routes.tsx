@@ -6,6 +6,7 @@ import { NotFound } from "./pages/notfound";
 import { Produto } from "./pages/produto"
 import { Layout } from "./components/layout";
 import { Login } from "./pages/login";
+import { Private } from "./routes/private";
 
 const router = createBrowserRouter([
     {
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/produto',
-                element: <Produto />
+                element: <Private> <Produto /> </Private>
             },
             {
                 path: '/produto/:id',
